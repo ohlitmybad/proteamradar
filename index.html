@@ -1,0 +1,254 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=0.52, user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="https://datamb.football/favicon.ico">
+  <title translate="no">DataMB | Compare Teams</title>
+<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	
+	
+	<style>
+       body, html {
+            margin: 0;
+            padding: 0;
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            height: 1010px;
+            border: none; /* Remove iframe borders if desired */
+        }
+
+
+
+.header {
+  font-family: system-ui;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background: #ececec;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 40px;
+  height: 40px;
+opacity: 0.84;
+}
+
+.header .logo-text {
+  margin-left: 10px;
+  font-size: 20px;
+color: #444444;
+  font-weight: 600;
+}
+
+.header .navigation {
+  display: center;
+  align-items: center;
+      word-spacing: 1.3em; /* Adjust the spacing as needed */	
+
+}
+
+.header .button {
+  margin: 0 10px;
+  padding: 0px 20px;
+  color: #444444;
+  text-decoration: none;
+  border-radius: 0px;
+font-size: 18px;
+}
+
+header a {
+      color: #444444;
+      text-decoration: none;
+
+    }
+
+.header .twitter-link svg {
+  width: 25px;
+  height: 24px;
+  fill: #444444;
+}
+
+ body.dark-mode {
+    background-color: #0F0F0E;
+  }
+
+body.dark-mode .header .twitter-link svg {
+  fill: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+}
+
+
+body.dark-mode header a {
+  color: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+}
+
+body.dark-mode .header .button  {
+  color: #bcbcbc; /* Change the Twitter icon color to green in dark mode */
+}
+
+
+body.dark-mode #positionSelect {
+
+background-color: #bcbcbc;
+color: black;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 80px;
+Right: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #e0e0de;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+
+
+.dark-mode-toggle .toggle-icon::before {
+  font-family: "Ionicons";
+  content: "\f467"; /* Unicode value for the moon icon in Ionicons */
+  font-size: 35px; /* Adjust the value as needed */
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: #333333;
+}
+
+
+
+body.dark-mode .dark-mode-toggle .toggle-icon::before {
+  font-family: "Ionicons";
+  content: "\f3b0"; /* Unicode value for the sun icon in Ionicons */
+  font-size: 24px; /* Adjust the value as needed */
+}
+
+	
+  /* Dark Mode Styles */
+  body.dark-mode,
+  body.dark-mode * {
+    color: #f2f2f2;
+  }
+
+
+    </style>
+
+<header class="header">
+  <div class="logo">
+    <a href="http://datamb.football">
+        <img src="https://i.imgur.com/UurMbGS.png" alt="Team statistics radar chart comparison" /></a>
+    <div class="logo-text"><a href="http://datamb.football">Teams</a></div>
+  </div>
+  <nav class="navigation">
+    <a href="http://datamb.football/radars/" class="button">Players</a>
+    <a href="http://datamb.football/join/" class="button">Pro</a>
+    <a href="http://datamb.football/proteamplot/" class="button">Plots</a>
+  </nav>
+  <a href="https://twitter.com/datamb_" target="_blank" class="twitter-link">
+    <svg width="25" height="24" fill="#bcbcbc" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.315 3.95c-.882.432-1.747.608-2.647.873-.99-1.116-2.456-1.177-3.865-.65-1.409.528-2.332 1.818-2.312 3.298v.882c-2.863.073-5.413-1.231-7.058-3.53 0 0-3.69 6.559 3.53 9.706-1.653 1.1-3.3 1.843-5.295 1.765 2.919 1.59 6.1 2.138 8.854 1.339 3.158-.918 5.754-3.285 6.75-6.832.298-1.078.445-2.192.439-3.311-.002-.22 1.332-2.446 1.604-3.54Z" />
+    </svg>
+  </a>
+</header>
+
+	
+<script>
+    // Function to scroll down a tiny bit
+    function scrollDown() {
+        window.scrollBy(0, 250); // Adjust the value (100) to change the scroll distance
+    }
+
+    // Function to scroll up a tiny bit
+    function scrollUp() {
+        window.scrollBy(0, -240); // Adjust the value (-80) to change the scroll distance
+    }
+
+    // Combine both actions with a small timer between them
+    function initializeScroll() {
+        // Check if the screen width is below the threshold for mobile devices (e.g., 768 pixels)
+        if (window.innerWidth < 768) {
+            scrollDown();
+            setTimeout(scrollUp, 10); // Adjust the delay time (1000ms = 1 second)
+        }
+    }
+
+    // Add an event listener to execute the scrolling functions when the page loads
+    window.addEventListener('load', initializeScroll);
+</script>
+
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/datamb-pub-pub/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
+	
+</head>
+
+	
+
+<body>
+ 
+
+
+   <script>
+
+function generateSrc(_0x453324){var _0x4b826e=atob(_0x453324);return _0x4b826e;}
+</script>
+
+    <iframe id="goalkeeperIframe"></iframe>
+
+
+
+
+<script>
+
+function _0x5c10(_0x4328da,_0x3bb196){var _0xbb8b3b=_0xbb8b();return _0x5c10=function(_0x5c1094,_0x1957fb){_0x5c1094=_0x5c1094-0x11a;var _0x17b245=_0xbb8b3b[_0x5c1094];return _0x17b245;},_0x5c10(_0x4328da,_0x3bb196);}var _0x2c73be=_0x5c10;(function(_0x41f445,_0x4fae24){var _0x3bc78d=_0x5c10,_0x3a750d=_0x41f445();while(!![]){try{var _0xb9ecfb=-parseInt(_0x3bc78d(0x11e))/0x1*(-parseInt(_0x3bc78d(0x127))/0x2)+-parseInt(_0x3bc78d(0x123))/0x3+parseInt(_0x3bc78d(0x11b))/0x4*(parseInt(_0x3bc78d(0x11f))/0x5)+parseInt(_0x3bc78d(0x128))/0x6*(parseInt(_0x3bc78d(0x11a))/0x7)+parseInt(_0x3bc78d(0x11c))/0x8+-parseInt(_0x3bc78d(0x120))/0x9*(-parseInt(_0x3bc78d(0x125))/0xa)+parseInt(_0x3bc78d(0x122))/0xb*(-parseInt(_0x3bc78d(0x11d))/0xc);if(_0xb9ecfb===_0x4fae24)break;else _0x3a750d['push'](_0x3a750d['shift']());}catch(_0xb45e8f){_0x3a750d['push'](_0x3a750d['shift']());}}}(_0xbb8b,0x44f76),document[_0x2c73be(0x121)](_0x2c73be(0x126))['src']=generateSrc(_0x2c73be(0x124)));function _0xbb8b(){var _0x1d4824=['28yjnAZC','89660frPyom','3133504APUujq','20316IHfXXj','28102sYhgvo','100iInxib','243vUqHnB','getElementById','8646Ogeiib','947781QzkhcI','aHR0cHM6Ly9kYXRhbWIuZm9vdGJhbGwvc2Rqc2RqamRzMTl0L2luZGV4Lmh0bWw=','172450VmTktG','goalkeeperIframe','28ChCIoo','345120uvaOXI'];_0xbb8b=function(){return _0x1d4824;};return _0xbb8b();}
+
+</script>
+
+
+
+<script>
+
+const _0x49d7fb=_0x3ccc;(function(_0x11c8bb,_0x2538d4){const _0x5b4669=_0x3ccc,_0x51fde0=_0x11c8bb();while(!![]){try{const _0x4cbc9a=parseInt(_0x5b4669(0x94))/0x1*(-parseInt(_0x5b4669(0x85))/0x2)+parseInt(_0x5b4669(0x8c))/0x3*(parseInt(_0x5b4669(0x91))/0x4)+parseInt(_0x5b4669(0x9c))/0x5*(parseInt(_0x5b4669(0x99))/0x6)+-parseInt(_0x5b4669(0x97))/0x7+-parseInt(_0x5b4669(0x9d))/0x8+parseInt(_0x5b4669(0x9e))/0x9+-parseInt(_0x5b4669(0x86))/0xa*(-parseInt(_0x5b4669(0x8f))/0xb);if(_0x4cbc9a===_0x2538d4)break;else _0x51fde0['push'](_0x51fde0['shift']());}catch(_0x37740a){_0x51fde0['push'](_0x51fde0['shift']());}}}(_0x1ea6,0xf337b));function _0x3ccc(_0x9469f5,_0x626211){const _0x1ea631=_0x1ea6();return _0x3ccc=function(_0x3ccc2c,_0x185b01){_0x3ccc2c=_0x3ccc2c-0x85;let _0x5ec680=_0x1ea631[_0x3ccc2c];return _0x5ec680;},_0x3ccc(_0x9469f5,_0x626211);}function _0x1ea6(){const _0xe677e9=['positionSelect','102076MHzpez','9070340wSXlFb','dark-mode-iframe','querySelector','getElementsByTagName','querySelectorAll','iframe','45132ZJYPYG','value','body','11KeFVNU','data','28rVeEcb','block','getElementById','15CoFaes','style','addEventListener','4215820rnPcNB','toggle','6OvfONj','toggleDarkMode','display','7988490tshEkV','12254576hvptXP','11572479TEGhZR','classList'];_0x1ea6=function(){return _0xe677e9;};return _0x1ea6();}const positionSelect=document[_0x49d7fb(0x93)](_0x49d7fb(0xa0)),iframes=document[_0x49d7fb(0x89)](_0x49d7fb(0x8b));positionSelect[_0x49d7fb(0x96)]('change',function(){const _0x20c6f6=_0x49d7fb,_0x45cc91=this[_0x20c6f6(0x8d)];for(const _0x2e6d7f of iframes){_0x2e6d7f[_0x20c6f6(0x95)][_0x20c6f6(0x9b)]='none';}if(_0x45cc91){const _0x3593c8=document[_0x20c6f6(0x8a)]('#'+_0x45cc91+'Iframe');for(const _0x2b8f9e of _0x3593c8){_0x2b8f9e['style'][_0x20c6f6(0x9b)]=_0x20c6f6(0x92);}}}),window[_0x49d7fb(0x96)]('message',function(_0x38701a){const _0x4533de=_0x49d7fb;if(_0x38701a[_0x4533de(0x90)]===_0x4533de(0x9a)){const _0x348dd8=document[_0x4533de(0x88)](_0x4533de(0x8e));_0x348dd8[_0x4533de(0x9f)][_0x4533de(0x98)](_0x4533de(0x87));}});
+</script>
+
+
+</body>
+</html>

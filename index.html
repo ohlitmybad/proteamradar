@@ -1563,8 +1563,37 @@ font-size: 12px;
   
   
   
-const names = [ "Ajax,23/24,All comps", "Almere City,23/24,All comps", "Almería,23/24,All comps", "Arouca,23/24,All comps", "Arsenal,23/24,All comps", "Aston Villa,23/24,All comps", "Atalanta,23/24,All comps", "Athletic Bilbao,23/24,All comps", "Atlético Madrid,23/24,All comps", "Augsburg,23/24,All comps", "AZ,23/24,All comps", "Barcelona,23/24,All comps", "Bayer Leverkusen,23/24,All comps", "Bayern München,23/24,All comps", "Benfica,23/24,All comps", "Boavista,23/24,All comps", "Bochum,23/24,All comps", "Bologna,23/24,All comps", "Borussia Dortmund,23/24,All comps", "Borussia Mgladbach,23/24,All comps", "Bournemouth,23/24,All comps", "Brentford,23/24,All comps", "Brest,23/24,All comps", "Brighton,23/24,All comps", "Burnley,23/24,All comps", "Cádiz,23/24,All comps", "Cagliari,23/24,All comps", "Casa Pia AC,23/24,All comps", "Celta de Vigo,23/24,All comps", "Chaves,23/24,All comps", "Chelsea,23/24,All comps", "Clermont,23/24,All comps", "Crystal Palace,23/24,All comps", "Darmstadt 98,23/24,All comps", "Deportivo Alavés,23/24,All comps", "Eintracht Frankfurt,23/24,All comps", "Empoli,23/24,All comps", "Estoril,23/24,All comps", "Estrela Amadora,23/24,All comps", "Everton,23/24,All comps", "Excelsior,23/24,All comps", "Famalicão,23/24,All comps", "Farense,23/24,All comps", "Feyenoord,23/24,All comps", "Fiorentina,23/24,All comps", "Fortuna Sittard,23/24,All comps", "Freiburg,23/24,All comps", "Frosinone,23/24,All comps", "Fulham,23/24,All comps", "Genoa,23/24,All comps", "Getafe,23/24,All comps", "Gil Vicente,23/24,All comps", "Girona,23/24,All comps", "Go Ahead Eagles,23/24,All comps", "Granada,23/24,All comps", "Heerenveen,23/24,All comps", "Heidenheim,23/24,All comps", "Hellas Verona,23/24,All comps", "Heracles,23/24,All comps", "Hoffenheim,23/24,All comps", "Internazionale,23/24,All comps", "Juventus,23/24,All comps", "Köln,23/24,All comps", "Las Palmas,23/24,All comps", "Lazio,23/24,All comps", "Le Havre,23/24,All comps", "Lecce,23/24,All comps", "Lens,23/24,All comps", "Lille,23/24,All comps", "Liverpool,23/24,All comps", "Lorient,23/24,All comps", "Luton Town,23/24,All comps", "Mainz 05,23/24,All comps", "Mallorca,23/24,All comps", "Manchester City,23/24,All comps", "Manchester United,23/24,All comps", "Metz,23/24,All comps", "Milan,23/24,All comps", "Monaco,23/24,All comps", "Montpellier,23/24,All comps", "Monza,23/24,All comps", "Moreirense,23/24,All comps", "Nantes,23/24,All comps", "Napoli,23/24,All comps", "NEC,23/24,All comps", "Newcastle United,23/24,All comps", "Nice,23/24,All comps", "Nottingham Forest,23/24,All comps", "Olympique Lyonnais,23/24,All comps", "Olympique Marseille,23/24,All comps", "Osasuna,23/24,All comps", "PEC Zwolle,23/24,All comps", "Portimonense,23/24,All comps", "Porto,23/24,All comps", "PSG,23/24,All comps", "PSV,23/24,All comps", "Rayo Vallecano,23/24,All comps", "RB Leipzig,23/24,All comps", "Real Betis,23/24,All comps", "Real Madrid,23/24,All comps", "Real Sociedad,23/24,All comps", "Reims,23/24,All comps", "Rennes,23/24,All comps", "Rio Ave,23/24,All comps", "RKC Waalwijk,23/24,All comps", "Roma,23/24,All comps", "Salernitana,23/24,All comps", "Sassuolo,23/24,All comps", "Sevilla,23/24,All comps", "Sheffield United,23/24,All comps", "Sparta Rotterdam,23/24,All comps", "Sporting Braga,23/24,All comps", "Sporting CP,23/24,All comps", "Strasbourg,23/24,All comps", "Stuttgart,23/24,All comps", "Torino,23/24,All comps", "Tottenham Hotspur,23/24,All comps", "Toulouse,23/24,All comps", "Twente,23/24,All comps", "Udinese,23/24,All comps", "Union Berlin,23/24,All comps", "Utrecht,23/24,All comps", "Valencia,23/24,All comps", "Villarreal,23/24,All comps", "Vitesse,23/24,All comps", "Vitória Guimarães,23/24,All comps", "Vizela,23/24,All comps", "Volendam,23/24,All comps", "Werder Bremen,23/24,All comps", "West Ham United,23/24,All comps", "Wolfsburg,23/24,All comps", "Wolverhampton Wanderers,23/24,All comps", "Manchester City,22/23,All comps", "Manchester United,22/23,All comps", "Porto,22/23,All comps", "Burnley,22/23,All comps", "Barcelona,22/23,All comps", "Olympique Marseille,22/23,All comps", "Ajax,22/23,All comps", "Lille,22/23,All comps", "Olympique Lyonnais,22/23,All comps", "Benfica,22/23,All comps", "Bayern München,22/23,All comps", "Brighton,22/23,All comps", "Luton Town,22/23,All comps", "Sheffield United,22/23,All comps", "Sporting CP,22/23,All comps", "Arsenal,22/23,All comps", "Milan,22/23,All comps", "Newcastle United,22/23,All comps", "Feyenoord,22/23,All comps", "Sporting Braga,22/23,All comps", "Villarreal,22/23,All comps", "Sunderland,22/23,All comps", "Liverpool,22/23,All comps", "Rennes,22/23,All comps", "Real Sociedad,22/23,All comps", "Fluminense,22/23,All comps", "Chelsea,22/23,All comps", "Napoli,22/23,All comps", "Leeds United,22/23,All comps", "Internazionale,22/23,All comps", "Atalanta,22/23,All comps", "AZ,22/23,All comps", "RB Leipzig,22/23,All comps", "Lens,22/23,All comps", "Brentford,22/23,All comps", "Borussia Dortmund,22/23,All comps", "Coventry City,22/23,All comps", "Real Madrid,22/23,All comps", "PSV,22/23,All comps", "PSG,22/23,All comps", "Southampton,22/23,All comps", "Freiburg,22/23,All comps", "Monaco,22/23,All comps", "Wolverhampton Wanderers,22/23,All comps", "Middlesbrough,22/23,All comps", "Aston Villa,22/23,All comps", "Tottenham Hotspur,22/23,All comps", "Fulham,22/23,All comps", "Leicester City,22/23,All comps", "Real Betis,22/23,All comps", "Juventus,22/23,All comps", "Everton,22/23,All comps", "Crystal Palace,22/23,All comps", "Roma,22/23,All comps", "Atlético Madrid,22/23,All comps", "Bayer Leverkusen,22/23,All comps", "Lazio,22/23,All comps", "Bournemouth,22/23,All comps", "Union Berlin,22/23,All comps", "West Ham United,22/23,All comps", "Nottingham Forest,22/23,All comps" ];
-    const searchInput = document.getElementById("searchInput1");
+
+    const xhr2 = new XMLHttpRequest();
+    xhr2.open('GET', 'https://datamb.football/data/team/radar.csv', false); // false for synchronous request
+    xhr2.send(null);
+    
+
+        const inputLines = xhr2.responseText;
+    const outputLines = [];
+
+// Split input into lines
+const lines = inputLines.trim().split('\n');
+
+// Process each line
+for (const line of lines) {
+  // Split the line by comma
+  const parts = line.split(',');
+
+  // Extract the desired fields
+  const name = parts[1];
+  const age = parts[3];
+  const club = parts[2];
+
+  // Create the formatted string
+  const outputLine = `${name},${age},${club}`;
+
+  // Add the formatted string to the output array
+  outputLines.push(outputLine);
+}
+
+    const names = outputLines;
+	  const searchInput = document.getElementById("searchInput1");
    const matchingNamesContainer = document.getElementById("matchingNames");
   const searchButton = document.getElementById("searchButton");
   

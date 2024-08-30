@@ -1008,19 +1008,13 @@ width: 95px;
     const isDarkMode = body.classList.contains('dark-mode');
     const backgroundColor = isDarkMode ? '#0F0F0E' : '#ffffff'; // Black for dark mode, white for light mode
     
-    const isIOS = () => {
-      return (/iPad|iPhone|iPod/.test(navigator.userAgent) || 
-             (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) && 
-             !window.MSStream;
-    };
+
   
     try {
       // Save the current zoom value and temporarily remove it if on iOS
       let originalZoom = null;
-      if (isIOS()) {
         originalZoom = body.style.zoom;
         body.style.zoom = '1';
-      }
   
       const element = document.querySelector('.screenshotcontainer'); // Capture the screenshotcontainer using the class name
       if (!element) {
@@ -1044,9 +1038,7 @@ width: 95px;
         link.click();
       }, 'image/png');
       // Restore the original zoom value if on iOS
-      if (isIOS() && originalZoom !== null) {
         body.style.zoom = originalZoom;
-      }
     } catch (error) {
       console.error('Error in takeScreenshot:', error);
       // Handle errors appropriately (e.g., display to user or log)

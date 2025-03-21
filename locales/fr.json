@@ -1,0 +1,44 @@
+{
+    "meta": {
+      "title": "DataMB | Comparaison d'équipes",
+      "description": "Comparez les statistiques des équipes de football des 7 grands championnats européens. Utilisez notre outil de comparaison radar et d'autres outils pour visualiser les données de Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Primeira Liga et plus encore."
+    },
+    "header": {
+      "home": "Accueil",
+      "pro": "Pro",
+      "guide": "Guide"
+    },
+    "search": {
+      "placeholder": "Chercher une équipe ou joueur...",
+      "placeholder2": "Entrez le nom d'une équipe..."
+    },
+    "radar": {
+      "physicality": "Physicalité",
+      "defending": "Défense",
+      "counters": "Contres",
+      "possession": "Possession",
+      "attacking": "Attaque",
+      "goals": "Buts",
+      "pressing": "Pressing"
+    },
+    "table": {
+      "percentile": "Centiles",
+      "season": "Saison",
+      "goals": "Buts",
+      "attacking": "Attaque",
+      "possession": "Possession",
+      "counters": "Contres",
+      "defending": "Défense",
+      "physicality": "Physicalité",
+      "pressing": "Pressing"
+    },
+    "similar": {
+      "to": "Données similaires à"
+    },
+    "buttons": {
+      "team": "Équipe"
+    },
+    "promo": {
+      "plot-link": "Nuages de points"
+    }
+  } 

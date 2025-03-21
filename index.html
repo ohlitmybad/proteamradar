@@ -1576,20 +1576,7 @@ similarPlayersContainer.appendChild(similarPlayerTable);
 	  
 <script>
 
-  
 
-
-function setLanguage(language) {
-localStorage.setItem('preferredLanguage', language);
-const url = new URL(window.location.href);
-if (language === 'en') {
-url.searchParams.delete('lang');
-} else {
-url.searchParams.set('lang', language);
-}
-window.history.pushState({}, '', url);
-applyLanguage(language);
-}
 
 function getPreferredLanguage() {
 // PRIORITY 1: Check URL parameter first
@@ -1632,9 +1619,7 @@ fetch(`locales/${language}.json`)
     document.querySelectorAll('[data-i18n]').forEach(element => {
       translateElement(element, translations);
     });
-    
-    document.querySelector('meta[name="language"]').setAttribute('content', language);
-    
+        
     if (!window.translationObserver) {
       window.translationObserver = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -1690,37 +1675,6 @@ function translateElement(element, translations) {
 
 const preferredLanguage = getPreferredLanguage();
 applyLanguage(preferredLanguage);
-
-// BUTTON LANGUAGE SWITCHER REMOVE FOR PAGES WITH NO LANGUAGE SWITCHER
-document.addEventListener('DOMContentLoaded', function() {
-const languageButton = document.getElementById('languageButton');
-const languageDropdown = document.getElementById('languageDropdown');
-
-
-if (languageButton) {
-languageButton.addEventListener('click', function(e) {
-  e.stopPropagation();
-  languageDropdown.classList.toggle('show');
-});
-}
-
-document.querySelectorAll('.language-option').forEach(option => {
-option.addEventListener('click', function(e) {
-  e.preventDefault();
-  const lang = this.getAttribute('href').split('=')[1];
-  setLanguage(lang);
-  languageDropdown.classList.remove('show');
-});
-});
-
-document.addEventListener('click', function(event) {
-if (!event.target.closest('.language-switcher-container')) {
-  if (languageDropdown) {
-    languageDropdown.classList.remove('show');
-  }
-}
-});
-});
 
 
 function toggleDarkMode() {

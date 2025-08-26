@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "DataMB | Takımları Karşılaştır",
+    "description": "En İyi 7 Ligdeki takımların istatistiklerini karşılaştırın. Takım performansını görselleştirin. Premier Lig, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Primeira Liga'daki takımlar için Gol, Yenen goller, xG, İsabetli şutlar, Pres, Savunma düelloları, Pas tamamlama ve daha fazlasını karşılaştırmak için radar aracımızı ve grafik araçlarımızı kullanın."
+  },
+  "header": {
+    "home": "Ana Sayfa",
+    "pro": "Pro",
+    "guide": "Rehber"
+  },
+  "search": {
+    "placeholder": "Takım veya oyuncu adı girin...",
+    "placeholder2": "Takım adı girin..."
+  },
+  "radar": {
+    "physicality": "Fiziksel",
+    "defending": "Savunma",
+    "counters": "Kontra",
+    "possession": "Top hakimiyeti",
+    "attacking": "Hücum",
+    "goals": "Goller",
+    "pressing": "Pres"
+  },
+  "table": {
+    "percentile": "Yüzdelikler",
+    "season": "Sezon",
+    "goals": "Goller",
+    "attacking": "Hücum",
+    "possession": "Top hakimiyeti",
+    "counters": "Kontra",
+    "defending": "Savunma",
+    "physicality": "Fiziksel",
+    "pressing": "Pres"
+  },
+  "similar": {
+    "to": "Benzer veri"
+  },
+  "buttons": {
+    "team": "Takım"
+  },
+  "promo": {
+    "plot-link": "Takım Metriklerini Grafikleştir"
+  }
+} 

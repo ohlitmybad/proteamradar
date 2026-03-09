@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "DataMB | Comparar Equipas",
+    "description": "Compare as estatísticas de equipas nas 7 principais ligas. Visualize o desempenho das equipas. Use as nossas ferramentas de radar e gráficos para comparar Golos, Golos sofridos, xG, Remates enquadrados, Pressão, Duelos defensivos, Precisão de passe e mais para equipas na Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Liga Portugal."
+  },
+  "header": {
+    "home": "Início",
+    "pro": "Pro",
+    "guide": "Guia"
+  },
+  "search": {
+    "placeholder": "Inserir nome de equipa ou jogador...",
+    "placeholder2": "Inserir nome da equipa..."
+  },
+  "radar": {
+    "physicality": "Físico",
+    "defending": "Defesa",
+    "counters": "Contra-ataques",
+    "possession": "Posse",
+    "attacking": "Ataque",
+    "goals": "Golos",
+    "pressing": "Pressão"
+  },
+  "table": {
+    "percentile": "Percentis",
+    "season": "Época",
+    "goals": "Golos",
+    "attacking": "Ataque",
+    "possession": "Posse",
+    "counters": "Contra-ataques",
+    "defending": "Defesa",
+    "physicality": "Físico",
+    "pressing": "Pressão"
+  },
+  "similar": {
+    "to": "Dados semelhantes a"
+  },
+  "buttons": {
+    "team": "Equipa"
+  },
+  "promo": {
+    "plot-link": "Visualizar métricas de equipa"
+  }
+}

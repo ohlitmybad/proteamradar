@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "DataMB | Confronta Squadre",
+    "description": "Confronta le statistiche delle squadre nei primi 7 campionati. Visualizza le prestazioni delle squadre. Usa i nostri strumenti radar e plot per confrontare Gol, Gol subiti, xG, Tiri in porta, Pressing, Duelli difensivi, Precisione passaggi e altro per le squadre in Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Liga Portugal."
+  },
+  "header": {
+    "home": "Home",
+    "pro": "Pro",
+    "guide": "Guida"
+  },
+  "search": {
+    "placeholder": "Inserisci nome squadra o giocatore...",
+    "placeholder2": "Inserisci nome della squadra..."
+  },
+  "radar": {
+    "physicality": "Fisicità",
+    "defending": "Difesa",
+    "counters": "Contropiedi",
+    "possession": "Possesso",
+    "attacking": "Attacco",
+    "goals": "Gol",
+    "pressing": "Pressing"
+  },
+  "table": {
+    "percentile": "Percentili",
+    "season": "Stagione",
+    "goals": "Gol",
+    "attacking": "Attacco",
+    "possession": "Possesso",
+    "counters": "Contropiedi",
+    "defending": "Difesa",
+    "physicality": "Fisicità",
+    "pressing": "Pressing"
+  },
+  "similar": {
+    "to": "Dati simili a"
+  },
+  "buttons": {
+    "team": "Squadra"
+  },
+  "promo": {
+    "plot-link": "Visualizza metriche squadra"
+  }
+}

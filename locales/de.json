@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "DataMB | Teams vergleichen",
+    "description": "Vergleichen Sie die Statistiken von Teams in den Top-7-Ligen. Visualisieren Sie Teamleistungen. Nutzen Sie unser Radar- und Plot-Tool zum Vergleich von Toren, Gegentoren, xG, Schüssen aufs Tor, Pressing, Defensivduellen, Passgenauigkeit und mehr für Teams in Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Liga Portugal."
+  },
+  "header": {
+    "home": "Startseite",
+    "pro": "Pro",
+    "guide": "Anleitung"
+  },
+  "search": {
+    "placeholder": "Team- oder Spielername eingeben...",
+    "placeholder2": "Teamname eingeben..."
+  },
+  "radar": {
+    "physicality": "Physis",
+    "defending": "Verteidigung",
+    "counters": "Konter",
+    "possession": "Ballbesitz",
+    "attacking": "Angriff",
+    "goals": "Tore",
+    "pressing": "Pressing"
+  },
+  "table": {
+    "percentile": "Perzentile",
+    "season": "Saison",
+    "goals": "Tore",
+    "attacking": "Angriff",
+    "possession": "Ballbesitz",
+    "counters": "Konter",
+    "defending": "Verteidigung",
+    "physicality": "Physis",
+    "pressing": "Pressing"
+  },
+  "similar": {
+    "to": "Ähnliche Daten wie"
+  },
+  "buttons": {
+    "team": "Team"
+  },
+  "promo": {
+    "plot-link": "Team-Metriken plotten"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "DataMB | Bandingkan Tim",
+    "description": "Bandingkan statistik tim di 7 Liga Teratas. Visualisasikan performa tim. Gunakan alat radar dan plot kami untuk membandingkan Gol, Gol kebobolan, xG, Tembakan tepat sasaran, Pressing, Duel bertahan, Akurasi umpan dan lebih banyak lagi untuk tim di Premier League, La Liga, Bundesliga, Serie A, Ligue 1, Eredivisie, Liga Portugal."
+  },
+  "header": {
+    "home": "Beranda",
+    "pro": "Pro",
+    "guide": "Panduan"
+  },
+  "search": {
+    "placeholder": "Masukkan nama tim atau pemain...",
+    "placeholder2": "Masukkan nama tim..."
+  },
+  "radar": {
+    "physicality": "Fisik",
+    "defending": "Bertahan",
+    "counters": "Serangan balik",
+    "possession": "Penguasaan",
+    "attacking": "Menyerang",
+    "goals": "Gol",
+    "pressing": "Pressing"
+  },
+  "table": {
+    "percentile": "Persentil",
+    "season": "Musim",
+    "goals": "Gol",
+    "attacking": "Menyerang",
+    "possession": "Penguasaan",
+    "counters": "Serangan balik",
+    "defending": "Bertahan",
+    "physicality": "Fisik",
+    "pressing": "Pressing"
+  },
+  "similar": {
+    "to": "Data serupa dengan"
+  },
+  "buttons": {
+    "team": "Tim"
+  },
+  "promo": {
+    "plot-link": "Visualisasi metrik tim"
+  }
+}
